@@ -1,0 +1,9 @@
+package com.hbsols.vo;
+
+public class StudentVO {
+
+	private int sno;
+	private String sname, saddr;
+	private int m1, m2, m3;
+
+}

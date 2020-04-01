@@ -1,0 +1,23 @@
+package com.hbsols.dao;
+
+import javax.sql.DataSource;
+
+import com.hbsols.bo.StudentBO;
+
+public class StudentDaoImpl implements IStudentDao {
+
+	public static final String QUERY = "INSERT INTO STUDENT VALUES(?,?,?,?,?)";
+
+	private DataSource ds;
+		
+	public StudentDaoImpl(DataSource ds) {
+		System.out.println("StudentDaoImpl 0-Param Constructor");
+		this.ds = ds;
+	}
+
+	@Override
+	public int insert(StudentBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

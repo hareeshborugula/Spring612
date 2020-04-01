@@ -1,0 +1,22 @@
+package com.hbsols.test;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.BeanFactory;
+
+import com.hbsols.controller.MainController;
+import com.hbsols.vo.StudentVO;
+
+public class RealTimeDITest {
+public static void main(String[] args) {
+	
+	BeanFactory factory = null;
+	Scanner sc = null;
+	StudentVO vo = null;
+	MainController controller = null;
+	int sno, m1, m2, m3;
+	 String sname = null, addr = null;
+	
+	
+}
+}

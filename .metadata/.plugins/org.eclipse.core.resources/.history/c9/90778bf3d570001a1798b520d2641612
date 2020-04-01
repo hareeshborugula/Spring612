@@ -1,0 +1,6 @@
+
+# Table Creation
+SQL> create table layered_student (sno number(3) primary key, sname varchar2(15), saddr varchar2(20), total number(3), avg number(3), result varchar2(6));
+
+# For creating sequence
+SQL>create sequence std_seq start with 100 increment by 1;

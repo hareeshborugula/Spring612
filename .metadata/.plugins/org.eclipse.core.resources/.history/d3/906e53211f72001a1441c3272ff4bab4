@@ -1,0 +1,11 @@
+package com.hbsols.controller;
+
+import com.hbsols.service.IEmployeeService;
+
+public class MainController {
+
+	private IEmployeeService service;
+	
+	
+	
+}

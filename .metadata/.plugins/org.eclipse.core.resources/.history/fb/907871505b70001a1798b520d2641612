@@ -1,0 +1,26 @@
+package com.hbsols.service;
+
+import com.hbsols.dao.StudentDAO;
+import com.hbsols.dto.StudentDTO;
+
+public class StudentOpServiceImpl implements StudentOpService {
+
+	private StudentDAO dao;
+
+	public StudentOpServiceImpl(StudentDAO dao) {
+		this.dao = dao;
+	}
+
+	@Override
+	public String register(StudentDTO dto) throws Exception {
+		
+		// use DAO
+		 
+		int count = dao.insert(bo);
+		if(count == 0)
+			return "Student Registration Failed...!";
+		else
+		return "Student Registration Success... :)";
+	}
+
+}

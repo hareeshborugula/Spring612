@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--  DriverManagerDataSource dependent class cfg -->
+<bean id="dmds" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+<property name="username" value="system"/>
+<property name="password" value="tiger"/>
+</bean>
+
+<!--  DAO class config -->
+<bean id="stDao" class="com.hbsols.dao.StudentDAOImpl">
+<constructor-arg name="dataSource" ref="dmds"/>
+</bean>
+
+<!--  Service Class Config -->
+<bean id="stService" class="com.hbsols.service.StudentOpServiceImpl">
+<constructor-arg name="dao" ref="stDao"/>
+</bean>
+
+<!--  Controller Config -->
+<bean id="mainCtrler" class="com.hbsols.controller.MainController">
+	<constructor-arg name="service" ref="stService"/>
+</bean>
+</beans>

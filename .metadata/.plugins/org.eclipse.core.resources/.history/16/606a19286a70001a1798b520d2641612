@@ -1,0 +1,29 @@
+package com.hbsols.test;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.BeanFactory;
+
+import com.hbsols.bo.StudentBO;
+import com.hbsols.controller.MainController;
+import com.hbsols.vo.StudentVO;
+
+public class RealTimeDITest {
+	public static void main(String[] args) {
+
+		BeanFactory factory = null;
+		Scanner sc = null;
+		StudentVO vo = null;
+		StudentBO bo = null;
+		MainController controller =  null;
+		int sno = 0, m1= 0, m2 = 0, m3 = 0;
+		String sname = null, saddr = null, result = null;
+		
+		// Read inputs  sno, sname, saddr, m1, m2, m3 from enduser and keep them in StudentVO class object as inputs Strings.
+		
+		sc = new Scanner(System.in);
+		System.out.println("Enter Student Number::");
+		sno = Integer.parseInt(sc.nextLine())
+				
+ 	}
+}

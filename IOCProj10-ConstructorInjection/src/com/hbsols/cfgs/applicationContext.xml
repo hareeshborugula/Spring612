@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean id="studentInfo" class="com.hbsols.beans.Student"> <constructor-arg 
+		value="919" type="int" /> <constructor-arg value="95.69f" type="float" /> 
+		<constructor-arg value="HB Sols" type="java.lang.String" /> </bean> -->
+
+	<bean id="studentInfo" class="com.hbsols.beans.Student">
+		<constructor-arg value="919" type="int"  index="0" name="sno"/>
+		<constructor-arg value="95.69f" type="float" />
+		<constructor-arg value="HB Sols"	type="java.lang.String" />
+	</bean>
+
+	<bean id="marksInfo" class="com.hbsols.beans.Marks">
+		<constructor-arg index="2" value="30" />
+		<constructor-arg index="1" value="20" />
+		<constructor-arg index="0" value="10" />
+	</bean>
+
+	<bean id="courseInfo" class="com.hbsols.beans.Course">
+		<constructor-arg name="facultyName" value="Nataraz" />
+		<constructor-arg name="cid" value="59" />
+		<constructor-arg name="fee" value="1500.00f" />
+		<constructor-arg name="cname" value="Spring" />
+	</bean>
+</beans>

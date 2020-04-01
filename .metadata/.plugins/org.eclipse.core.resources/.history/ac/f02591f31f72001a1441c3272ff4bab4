@@ -1,0 +1,12 @@
+package com.hbsols.service;
+
+import com.hbsols.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl  implements IEmployeeService{
+
+	@Override
+	public String registerEmployee(EmployeeDTO dto) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

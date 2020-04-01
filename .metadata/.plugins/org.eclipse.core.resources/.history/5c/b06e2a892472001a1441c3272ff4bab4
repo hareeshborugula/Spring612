@@ -1,0 +1,30 @@
+package com.hbsols.test;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.BeanFactory;
+
+import com.hbsols.controller.MainController;
+
+public class EmpDITest {
+	public static void main(String[] args) {
+		
+		Scanner sc = null;
+		BeanFactory factory = null;
+		MainController controller = null;
+		int eno;
+		String ename = null, eaddr = null;
+		float basicSal = 0.0f;
+		
+		sc = new Scanner(System.in);
+		System.out.println("Enter Employee Number");
+		eno = Integer.parseInt(sc.nextLine());
+		System.out.println("Enter Employee Name");
+		ename = sc.nextLine();
+		System.out.println("Enter Employee Address");
+		eaddr = sc.nextLine();
+		System.out.println("Enter Employee Basic Sal");
+		basicSal = Float.parseFloat(sc.nextLine());
+	}
+// empController
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MinProj-1.2/src/com/hbsols/cfgs/persistent-beans.xml&apos; to &apos;persistence-beans.xml&apos;" description="Rename resource &apos;persistent-beans.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/hbsols/cfgs/persistent-beans.xml" name="persistence-beans.xml" stamp="1585573539394" updateReferences="true"/>
+</session>

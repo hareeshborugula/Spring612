@@ -1,0 +1,8 @@
+package com.hbsols.test;
+
+public class RealTimeDITest {
+	public static void main(String[] args) {
+
+		// Create IOC container
+	}
+}

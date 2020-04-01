@@ -1,0 +1,7 @@
+package com.hbsols.dao;
+
+import com.hbsols.bo.StudentBO;
+
+public interface IStudentDao {
+	public String insert(StudentBO bo) throws Exception;
+}

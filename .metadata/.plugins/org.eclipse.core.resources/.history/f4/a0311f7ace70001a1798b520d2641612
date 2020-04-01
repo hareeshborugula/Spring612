@@ -1,0 +1,15 @@
+package com.hbsols.controller;
+
+import com.hbsols.service.IStudentOpService;
+
+public class MainController {
+
+	private IStudentOpService service;
+
+	public MainController(IStudentOpService service) {
+		System.out.println("MainController -1 Param Constructor");
+		this.service = service;
+	}
+	
+	
+}

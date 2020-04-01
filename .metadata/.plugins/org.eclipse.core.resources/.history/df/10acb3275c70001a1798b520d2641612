@@ -1,0 +1,12 @@
+package com.hbsols.bo;
+
+public class StudentBO {
+
+	private int sno;
+	private String sname;
+	private String saddr;
+	private int total;
+	private float avg;
+	private String result;
+	
+}

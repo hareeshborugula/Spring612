@@ -1,0 +1,58 @@
+package com.hbsols.service;
+
+import com.hbsols.bo.StudentBO;
+import com.hbsols.dao.StudentDAO;
+import com.hbsols.dto.StudentDTO;
+
+public class StudentOpServiceImpl implements StudentOpService {
+
+	private StudentDAO dao;
+
+	public StudentOpServiceImpl(StudentDAO dao) {
+		System.out.println("StudentOpServiceImpl 1-Param Constructor");
+		this.dao = dao;
+	}
+
+	@Override
+	public String register(StudentDTO dto) throws Exception {
+
+		int total = 0;
+		float avg = 0.0f;
+		String result = null;
+		StudentBO bo = null;
+		int count;
+
+		// Write b.Logic by collecting all inputs from dto and Calculate total , avg and
+		// generate result.
+		if (dto.getM1() <= 34 || dto.getM2() <= 34 || dto.getM3() <= 34) {
+			total = dto.getM1() + dto.getM2() + dto.getM3();
+			avg = total / 3;
+			result = "FAIL";
+		} else {
+			total = dto.getM1() + dto.getM2() + dto.getM3();
+			avg = total / 3;
+			result = "PASS";
+		}
+
+		// Prepare BO class having sno, sname, saddr , total , avg , result
+
+		bo = new StudentBO();
+
+		bo.setSno(dto.getSno());
+		bo.setSname(dto.getSname());
+		bo.setSaddr(dto.getSaddr());
+		bo.setTotal(total);
+		bo.setAvg(avg);
+		bo.setResult(result);
+
+		// use DAO
+		count = dao.insert(bo);
+		System.out.println("count:::"+count);
+		if (count == 0)
+			return "Student Registration Failed...!";
+		else
+			return "Student Registration Success... :)" + "\t Total :::" + total + "\t Avg :::" + avg + "\t Result:::"+ result;
+
+	}
+
+}

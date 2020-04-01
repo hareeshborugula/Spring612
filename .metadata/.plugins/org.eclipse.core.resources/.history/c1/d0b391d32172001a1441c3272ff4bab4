@@ -1,0 +1,30 @@
+package com.hbsols.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+
+import javax.sql.DataSource;
+
+import com.hbsols.bo.EmployeeBO;
+
+public class EmployeeDAOImpl implements IEmployeeDAO {
+
+	private DataSource ds;
+	
+	
+	public EmployeeDAOImpl(DataSource ds) {
+		System.out.println("EmployeeDAOImpl - 1-Param Constructor");
+		this.ds = ds;
+	}
+
+	@Override
+	public int insert(EmployeeBO bo) throws Exception {
+		Connection con = null;
+		PreparedStatement ps =  null;
+		
+		con = ds.getConnection();
+		ps = con.prepareStatement(QUERY)
+		return 0;
+	}
+
+}

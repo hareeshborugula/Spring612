@@ -1,0 +1,35 @@
+package com.hbsols.service;
+
+import com.hbsols.bo.StudentBO;
+import com.hbsols.dao.StudentDAO;
+import com.hbsols.dto.StudentDTO;
+
+public class StudentOpServiceImpl implements StudentOpService {
+
+	private StudentDAO dao;
+
+	public StudentOpServiceImpl(StudentDAO dao) {
+		this.dao = dao;
+	}
+
+	@Override
+	public String register(StudentDTO dto) throws Exception {
+		
+		StudentBO bo = null;
+		
+		// Write b.Logic by collecting all inputs from dto
+		
+		// Calculate total , avg  and generate result.
+		
+		// Prepare BO class having sno, sname, saddr , total , avg , result
+		
+		// use DAO
+		int count = dao.insert(bo );
+		if(count == 0)
+			return "Student Registration Failed...!";
+		else
+		return "Student Registration Success... :)";
+		
+	}
+
+}

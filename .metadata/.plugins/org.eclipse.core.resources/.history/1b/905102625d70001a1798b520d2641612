@@ -1,0 +1,17 @@
+package com.hbsols.controller;
+
+import com.hbsols.service.StudentOpService;
+import com.hbsols.vo.StudentVO;
+
+public class MainController {
+
+	private StudentOpService service;
+
+	public MainController(StudentOpService service) {
+		this.service = service;
+	}
+
+	public String handle(StudentVO vo) throws Exception{
+		
+	}
+}

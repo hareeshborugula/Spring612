@@ -1,0 +1,34 @@
+package com.hbsols.service;
+
+import com.hbsols.dao.IStudentDao;
+import com.hbsols.dto.StudentDTO;
+
+public class StudentOpServiceImpl implements IStudentOpService {
+
+	private IStudentDao dao;
+	
+	
+	public StudentOpServiceImpl(IStudentDao dao) {
+		System.out.println("StudentOpServiceImpl 1-Param Constructor");
+		this.dao = dao;
+	}
+
+
+	@Override
+	public String register(StudentDTO dto) throws Exception {
+		
+		// write b.Logic by collecting inputs from dto
+		
+		 int sno, m1, m2, m3, total = 0;
+		 float avg = 0.0f;
+		 String sname = null, addr = null, result = null;
+		
+		 sno = dto.getSno();
+		 sname = dto.getSname();
+		 addr = dto.getAddr();
+		
+		 // Calculate total , avg and generate result
+		return null;
+	}
+
+}

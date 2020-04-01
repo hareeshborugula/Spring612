@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="IOCProj13-CyclicInjection-Setter"/>
+<aop-project name="MinProj-1.2"/>
+<aop-project name="IOCProj9-StrategyDP-Spring"/>
+<aop-project name="MinProj-1.1"/>
+<aop-project name="IOCProj2-ConstructorInjection"/>
+<aop-project name="MinProj-1.3"/>
+<aop-project name="MiniProj-1"/>
+<aop-project name="IOCProj13-CyclicInjection-Constructor"/>
+<aop-project name="MVCProj1-FirstApp-WelcomePage"/>
+<aop-project name="IOCProj10-ConstructorInjection"/>
+<aop-project name="IOCProj13-CyclicInjection-SetterNConstructor-Together"/>
+<aop-project name="IOCProj5-BeanCollaboration-TightCoupling"/>
+</aop-reference-model>

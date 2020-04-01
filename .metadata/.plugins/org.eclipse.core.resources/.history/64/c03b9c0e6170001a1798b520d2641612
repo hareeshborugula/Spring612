@@ -1,0 +1,24 @@
+package com.hbsols.dao;
+
+import javax.sql.DataSource;
+
+import com.hbsols.bo.StudentBO;
+
+public class StudentDAOImpl implements StudentDAO {
+
+	private static final String INSERT_STUDENT_QUERY = "INSERT INTO LAYERED_STUDENT VALUES(?,?,?,?,?,?)";
+	
+	private DataSource dataSource;
+
+	public StudentDAOImpl(DataSource dataSource) {
+		System.out.println("StudentDAOImpl :: 1-Param Constructor"+dataSource.getClass());
+		this.dataSource = dataSource;
+	}
+
+	@Override
+	public int insert(StudentBO bo) throws Exception {
+
+		return 0;
+	}
+
+}

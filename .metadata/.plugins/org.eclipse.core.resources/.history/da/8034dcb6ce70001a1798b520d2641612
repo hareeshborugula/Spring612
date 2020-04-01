@@ -1,0 +1,22 @@
+package com.hbsols.controller;
+
+import com.hbsols.dto.StudentDTO;
+import com.hbsols.service.IStudentOpService;
+import com.hbsols.vo.StudentVO;
+
+public class MainController {
+
+	private IStudentOpService service;
+
+	public MainController(IStudentOpService service) {
+		System.out.println("MainController -1 Param Constructor");
+		this.service = service;
+	}
+	
+	public String doProcess(StudentVO vo) throws Exception{
+		StudentDTO dto = null;
+		
+		return "";
+	}
+	
+}

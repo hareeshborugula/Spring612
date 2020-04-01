@@ -1,0 +1,5 @@
+package com.hbsols.dao;
+
+public interface StudentDAO {
+public int insert(StudentBO bo) throws Exeption();
+}

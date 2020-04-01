@@ -1,0 +1,19 @@
+
+# Table Creation
+SQL> CREATE TABLE EMP_TAB (ENO NUMBER(3) PRIMARY KEY, ENAME VARCHAR2(15), EADDR VARCHAR2(20), BASICSAL NUMBER(10), GROSS NUMBER(10), NETPAY VARCHAR2(10));
+
+# For creating sequence
+SQL>CREATE SEQUENCE EMP_SEQ START WITH 90 INCREMENT BY 1;
+
+
+
+pid
+pname
+paddr
+Aadhar
+VoterID
+Passport
+PAN
+Company
+Sal
+phoneNum *

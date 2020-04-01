@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Dependent Bean cfg -->
+	<bean id="crDtdc" class="com.hbsols.beans.DTDC" />
+	<bean id="crBlueDart" class="com.hbsols.beans.BlueDart"/>
+
+	<bean id="flipkart" class="com.hbsols.beans.Flipkart">
+		<!-- <property name="courier" ref="crDtdc"></property> --> 
+		<constructor-arg name="courier" ref="crBlueDart"/>
+	</bean>
+</beans>

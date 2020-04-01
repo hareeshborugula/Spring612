@@ -1,0 +1,21 @@
+package com.hbsols.controller;
+
+import com.hbsols.dto.EmployeeDTO;
+import com.hbsols.service.IEmployeeService;
+
+public class MainController {
+
+	private IEmployeeService service;
+
+	public MainController(IEmployeeService service) {
+		System.out.println("MainController 1 -Param Constructor");
+		this.service = service;
+	}
+	
+	public String process(EmployeeDTO dto) {
+		
+		
+		return "";
+	}
+
+}

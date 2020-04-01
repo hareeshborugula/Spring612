@@ -1,0 +1,21 @@
+package com.hbsols.dao;
+
+import javax.sql.DataSource;
+
+import com.hbsols.bo.StudentBO;
+
+public class StudentDAOImpl implements StudentDAO {
+
+	private DataSource dataSource;
+
+	public StudentDAOImpl(DataSource dataSource) {
+		this.dataSource = dataSource;
+	}
+
+	@Override
+	public int insert(StudentBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

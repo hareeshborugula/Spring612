@@ -1,0 +1,7 @@
+package com.hbsols.dto;
+
+import java.io.Serializable;
+
+public class StudentDTO implements Serializable {
+
+}

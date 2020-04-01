@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="MVCProj1-FirstApp-WelcomePage">
+        <property name="context-root" value="MVCProj1-FirstApp-WelcomePage"/>
+    </wb-module>
+</project-modules>

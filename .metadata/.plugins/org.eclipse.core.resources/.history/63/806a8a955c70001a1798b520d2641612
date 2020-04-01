@@ -1,0 +1,13 @@
+package com.hbsols.controller;
+
+import com.hbsols.service.StudentOpService;
+
+public class MainController {
+
+	private StudentOpService service;
+
+	public MainController(StudentOpService service) {
+		this.service = service;
+	}
+
+}

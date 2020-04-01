@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.hbsols.comp&apos; to &apos;IOCProj3-FactoryDesignPatternSol/src&apos;&#x0D;&#x0A;- Original project: &apos;IOCProj3-FactoryDesignPatternEg&apos;&#x0D;&#x0A;- Destination element: &apos;IOCProj3-FactoryDesignPatternSol/src&apos;&#x0D;&#x0A;- Original element: &apos;IOCProj3-FactoryDesignPatternEg/src/com.hbsols.comp&apos;" description="Copy package" destination="=IOCProj3-FactoryDesignPatternSol/src" element1="/src&lt;com.hbsols.comp" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1583793170560" version="1.0"/>
+</session>

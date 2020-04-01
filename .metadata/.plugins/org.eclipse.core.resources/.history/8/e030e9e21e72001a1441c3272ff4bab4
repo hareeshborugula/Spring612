@@ -1,0 +1,8 @@
+package com.hbsols.controller;
+
+public class MainController {
+
+	private EmployeeService service;
+	
+	
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=IOCProj3-FactoryDesignPatternEg/src&lt;com.hbsols.comp{Car.java[Car" modifiers="1025" timestamp="1583792231103"/>
+<typeInfo handle="=IOCProj8-BeanCollaboration-LooseCoupling/src&lt;com.hbsols.beans{Payment.java[Payment" modifiers="513" timestamp="1584042217490"/>
+<typeInfo handle="=IOCProj9-StrategyDP-CoreJava/src&lt;com.hbsols.comp{Engine.java[Engine" modifiers="513" timestamp="1584043027831"/>
+<typeInfo handle="=MiniProj-1/src&lt;com.hbsols.dao{StudentDAO.java[StudentDAO" modifiers="513" timestamp="1585334301173"/>
+<typeInfo handle="=MiniProj-1/C:\/Program Files\/Java\/jdk1.8.0_221\/jre\/lib\/rt.jar=/javadoc_location=/https:\/\/docs.oracle.com\/javase\/8\/docs\/api\/=/&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1567855295021"/>
+<typeInfo handle="=MiniProj-1/src&lt;com.hbsols.service{StudentOpService.java[StudentOpService" modifiers="513" timestamp="1585337815372"/>
+<typeInfo handle="=MinProj-1.1/src&lt;com.hbsols.dao{IStudentDao.java[IStudentDao" modifiers="513" timestamp="1585384164014"/>
+<typeInfo handle="=MinProj-1.1/src&lt;com.hbsols.service{IStudentOpService.java[IStudentOpService" modifiers="513" timestamp="1585384014994"/>
+<typeInfo handle="=MinProj-1.2/src&lt;com.hbsols.dao{IEmployeeDAO.java[IEmployeeDAO" modifiers="513" timestamp="1585527728883"/>
+<typeInfo handle="=IOCProj1-SetterInjection/C:\/oraclexe\/app\/oracle\/product\/11.2.0\/server\/jdbc\/lib\/ojdbc6.jar&lt;oracle.jdbc(OracleDriver.class[OracleDriver" modifiers="33" timestamp="1401345906000"/>
+<typeInfo handle="=MVCProj1-FirstApp-WelcomePage/E:\/instl_soft\/spring-framework-5.2.3.RELEASE\/libs\/spring-webmvc-5.2.3.RELEASE.jar=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/&lt;org.springframework.web.servlet.mvc(Controller.class[Controller" modifiers="1537" timestamp="1578968476000"/>
+</typeInfoHistroy>

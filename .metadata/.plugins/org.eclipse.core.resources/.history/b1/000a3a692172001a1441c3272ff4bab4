@@ -1,0 +1,38 @@
+package com.hbsols.service;
+
+import com.hbsols.bo.EmployeeBO;
+import com.hbsols.dao.IEmployeeDAO;
+import com.hbsols.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl  implements IEmployeeService{
+	
+	private IEmployeeDAO dao;
+
+	public EmployeeServiceImpl(IEmployeeDAO dao) {
+		System.out.println("EmployeeServiceImpl 1 -Param Consturctor");
+		this.dao = dao;
+	}
+
+	@Override
+	public String registerEmployee(EmployeeDTO dto) throws Exception {
+		EmployeeBO bo = null;
+		float gross= 0.0f, netpay= 0.0f;
+		int count;
+		
+		 gross = dto.getBasicSal() + ( dto.getBasicSal() * 0.3f);
+		 netpay = gross - (dto.getBasicSal() * 0.2f);
+		 
+		 bo.setEno(dto.getEno());
+		bo.setEname(dto.getEname());
+		bo.setEaddr(dto.getEaddr());
+		bo.setBasicSal(dto.getBasicSal());
+		bo.setGross(gross);
+		bo.setNetpay(netpay);
+		
+		count = dao.insert(bo);
+		if(count==1)
+			return "Employee Registration Done::->"+" BasicSalary:"+dto.getBasicSal()+" GrossSalary:"+gross+" Netsalary:"+netpay;
+		else
+			return "Employee Registration Failed::->"+" BasicSalary:"+dto.getBasicSal()+" GrossSalary:"+gross+" Netsalary:"+netpay;
+	}
+}

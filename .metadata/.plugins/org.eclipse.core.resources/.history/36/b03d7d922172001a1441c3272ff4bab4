@@ -1,0 +1,13 @@
+package com.hbsols.dao;
+
+import com.hbsols.bo.EmployeeBO;
+
+public class EmployeeDAOImpl implements IEmployeeDAO {
+
+	@Override
+	public int insert(EmployeeBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

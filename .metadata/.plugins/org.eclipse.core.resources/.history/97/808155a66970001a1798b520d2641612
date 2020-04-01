@@ -1,0 +1,10 @@
+package com.hbsols.test;
+
+public class RealTimeDITest {
+	public static void main(String[] args) {
+
+		// Create IOC container
+		
+		// Read inputs  sno, sname, saddr, m1, m2, m3 from enduser and keep them in StudentVO class object as inputs Strings.
+ 	}
+}

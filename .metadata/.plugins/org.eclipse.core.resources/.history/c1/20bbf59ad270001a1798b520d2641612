@@ -1,0 +1,14 @@
+package com.hbsols.dao;
+
+import com.hbsols.bo.StudentBO;
+
+public class StudentDaoImpl implements IStudentDao {
+
+	public static final String QUERY = "INSERT INTO STUDENT VALUES(?,?,?,?,?)";
+	
+	@Override
+	public int insert(StudentBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+}

@@ -1,0 +1,7 @@
+package com.hbsols.service;
+
+public interface StudentOpService {
+	
+	public String register(StudentDTO dto) throws Exception;
+
+}

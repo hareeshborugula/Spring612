@@ -1,0 +1,13 @@
+package com.hbsols.dao;
+
+import com.hbsols.bo.StudentBO;
+
+public class StudentDaoImpl implements IStudentDao {
+
+	@Override
+	public String insert(StudentBO bo) throws Exception {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

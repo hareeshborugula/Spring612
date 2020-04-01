@@ -1,0 +1,24 @@
+package com.hbsols.service;
+
+import com.hbsols.bo.EmployeeBO;
+import com.hbsols.dao.IEmployeeDAO;
+import com.hbsols.dto.EmployeeDTO;
+
+public class EmployeeServiceImpl  implements IEmployeeService{
+	
+	private IEmployeeDAO dao;
+
+	public EmployeeServiceImpl(IEmployeeDAO dao) {
+		System.out.println("EmployeeServiceImpl 1 -Param Consturctor");
+		this.dao = dao;
+	}
+
+	@Override
+	public String registerEmployee(EmployeeDTO dto) throws Exception {
+		EmployeeBO bo = null;
+		float gross= 0.0f, netpay= 0.0f;
+		
+		
+		return null;
+	}
+}

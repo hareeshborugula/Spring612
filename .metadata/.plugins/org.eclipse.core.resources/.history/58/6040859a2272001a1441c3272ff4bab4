@@ -1,0 +1,6 @@
+
+# Table Creation
+SQL> create table emp_tab (eno number(3) primary key, ename varchar2(15), eaddr varchar2(20), basic number(10), gross number(10), netpay varchar2(10));
+
+# For creating sequence
+SQL>create sequence emp_seq start with 90 increment by 1;

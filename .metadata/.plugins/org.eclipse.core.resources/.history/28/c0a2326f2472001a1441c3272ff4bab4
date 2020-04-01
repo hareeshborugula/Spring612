@@ -1,0 +1,21 @@
+package com.hbsols.test;
+
+import java.util.Scanner;
+
+import org.springframework.beans.factory.BeanFactory;
+
+import com.hbsols.controller.MainController;
+
+public class EmpDITest {
+	public static void main(String[] args) {
+		
+		Scanner sc = null;
+		BeanFactory factory = null;
+		MainController controller = null;
+		int eno;
+		String ename = null, eaddr = null;
+		float basicSal = 0.0f;
+		
+	}
+// empController
+}

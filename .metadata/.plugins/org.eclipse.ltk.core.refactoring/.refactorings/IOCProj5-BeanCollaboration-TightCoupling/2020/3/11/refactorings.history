@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;IOCProj5-BeanCollaboration-TightCoupling/src&apos;&#x0D;&#x0A;- Original project: &apos;IOCProj5-BeanCollaboration-LooseCoupling&apos;&#x0D;&#x0A;- Destination element: &apos;IOCProj5-BeanCollaboration-TightCoupling/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     IOCProj5-BeanCollaboration-LooseCoupling/src/com.hbsols.beans&#x0D;&#x0A;     IOCProj5-BeanCollaboration-LooseCoupling/src/com.hbsols.cfgs&#x0D;&#x0A;     IOCProj5-BeanCollaboration-LooseCoupling/src/com.hbsols.test" description="Copy packages" destination="=IOCProj5-BeanCollaboration-TightCoupling/src" element1="/src&lt;com.hbsols.beans" element2="/src&lt;com.hbsols.cfgs" element3="/src&lt;com.hbsols.test" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1583961887624" version="1.0"/>
+</session>

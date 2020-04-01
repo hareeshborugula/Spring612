@@ -1,0 +1,9 @@
+package com.hbsols.service;
+
+import com.hbsols.dto.EmployeeDTO;
+
+public interface IEmployeeService {
+
+	public String registerEmployee(EmployeeDTO dto) throws Exception;
+
+}

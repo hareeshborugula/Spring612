@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- Dependent Bean cfg -->
+	<bean id="gPay" class="com.hbsols.beans.GooglePay" />
+	<bean id="phonePay" class="com.hbsols.beans.PhonePe" />
+	<bean id="payTm" class="com.hbsols.beans.PayTm" />
+
+	<bean id="flipkart" class="com.hbsols.beans.Flipkart">
+		<property name="payment" ref="gPay"></property>
+<!-- 		<property name="payment" ref="phonePay"></property>
+		<property name="payment" ref="payTm"></property> -->
+	</bean>
+	
+</beans>

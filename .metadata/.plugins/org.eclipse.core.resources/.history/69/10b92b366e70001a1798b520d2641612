@@ -1,0 +1,4 @@
+
+
+# For creating sequence
+create sequence std_seq start with 100 increment by 1;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- DriverManager Config -->
+<bean id="driverMgrDs" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver "/>
+<property name="url" value="jdbc:oracle:thin:@localhost:xe"/>
+<property name="username" value="system"/>
+<property name="password" value="tiger"/>
+</bean>
+
+<!-- DAO class Config -->
+<bean id="empDao" class="com.hbsols.dao.EmployeeDAOImpl">
+<constructor-arg name="" ref="driverMgrDs"/>
+</bean>
+
+<!-- Service class Config -->
+<bean id="empService" class="com.hbsols.service.EmployeeServiceImpl">
+<constructor-arg name="" ref="empDao"/>
+</bean>
+
+<!--  Controller Config -->
+<bean id="empController" class="com.hbsols.controller.MainController">
+<constructor-arg name="" ref="empService"/>
+</bean>
+
+</beans>
